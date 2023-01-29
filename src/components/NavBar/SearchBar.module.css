@@ -1,0 +1,14 @@
+.search{
+    margin-right: 10px;
+}
+.inp{
+    margin-right: 5px;
+    background-color: rgb(255, 201, 53);
+    color: rgb(7, 143, 59);
+    border-color: yellow;
+}
+.btn{
+    background-color: rgb(255, 201, 53);
+    color: rgb(7, 143, 59);
+    border-color: yellow;
+}
