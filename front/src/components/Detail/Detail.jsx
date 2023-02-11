@@ -9,7 +9,7 @@ export default function Detail(){
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch(`https://rickandmortyapi.com/api/character/${detailId}`)
+        fetch(`http://localhost:3001/rickandmorty/detail/${detailId}`)
           .then((response) => response.json())
           .then((char) => {
             if (char.name) {
@@ -37,7 +37,8 @@ export default function Detail(){
             <h3>Estado: {character.status}</h3>
             <h3>Especie: {character.species}</h3>
             <h3>Genero: {character.gender}</h3>
-            <h3></h3>
+            <h3>Origen: {character.origin}</h3>
+            <h3>Ubicación: {character.location}</h3>
         </div>
     )
 }

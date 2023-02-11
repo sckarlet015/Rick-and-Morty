@@ -39,7 +39,7 @@ const onSearch = (character) => {
   if(character === characters.map(ele => ele.id)){
     window.alert("El personaje ya existe")
   } else {
-      fetch(`https://rickandmortyapi.com/api/character/${character}`)
+      fetch(`http://localhost:3001/rickandmorty/onsearch/${character}`)
       .then((response) => response.json())
       .then((data) => {
          if (data.name) {
